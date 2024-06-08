@@ -11,6 +11,7 @@ function About() {
         </div>
         <div className="col50">
           <div className="imgBx">
+            {/* <img src="https://ibb.co/HHVrV14"></img> */}
             <img src="https://venturebeat.com/wp-content/uploads/2024/01/DALL%C2%B7E-2024-01-26-11.45.04-Generate-a-minimalist-abstract-illustration-that-represents-AI-code-generation-ensuring-it-contains-no-human-elements-or-facial-features.-The-design-.png?w=750" alt="About Us"/>
           </div>
         </div>
