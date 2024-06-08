@@ -1,0 +1,759 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner 
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://i.pinimg.com/originals/0d/ac/d4/0dacd4acac8020b29e0821cd62f7158b.jpg");
+    background-size: cover;
+}
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2
+{
+    font-size: 7em;
+    color: #fff;
+}
+
+.banner .content p 
+{
+    font-size: 2em;
+    color: #999;
+}
+
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #0072BA;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+
+/*Header*/
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky 
+{
+    background: #fff;
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo
+{
+    color: #111;
+}
+
+header .logo span
+{
+    color: #0072BA;
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+
+header .navigation li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a 
+{
+    color: #111;
+} 
+
+header .navigation li a:hover
+{
+    color: #0072BA;
+}
+
+
+section 
+{
+    padding: 100px;
+}
+
+/* #about
+{
+    width: 100%;
+    height: 100vh;
+} */
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+
+.titleText
+{
+    /* margin-top: -40px; */
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span
+{
+    color: #0072BA;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx
+{
+    top: 40px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 150px;
+}
+
+.row .col50 p 
+{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.row .col50 .imgBx img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .wrapper
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .wrapper .content-box
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-top: 30px;
+}
+
+
+.services .wrapper .content-box .card
+{
+   min-height: 220px;
+   width: 302px;
+   padding: 30px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: #fff;
+   margin: 25px 6px;
+   box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+   transition: 1s;
+}
+
+.services .wrapper .content-box .card i 
+{
+    margin: 15px;
+    color: #0072BA;
+}
+
+.services .wrapper .content-box .card h2 
+{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services .wrapper .content-box .card p 
+{
+    color: #6c757d;
+    text-align: center;
+}
+
+.services .wrapper .content-box .card:hover
+{
+   background: #0072BA;
+}
+
+.services .wrapper .content-box .card:hover i
+{
+   color: #fff;
+}
+
+.services .wrapper .content-box .card:hover p
+{
+   color: #fff;
+}
+
+.services .wrapper .content-box .card:hover h2 
+{
+   font-weight: 550;
+}
+
+.team
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: #f8f8f8; */
+}
+
+.team .container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Adjust gap between items */
+    align-items: start; /* Align items to the top */
+}
+
+.team .container .box 
+{
+   width: 266px;
+   height: 340px;
+   background: #f8f8f8;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 20px;
+   position: relative;
+   box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+   transition: 1s;
+}
+
+
+
+.team .container .box  .details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team .container .box  .details img 
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: cover;
+}
+
+.team .container .box  .details strong
+{
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+.team .container .box  .details p 
+{
+    /* padding-top: 10px; */
+    font-size: 1.0rem;
+    color: #7a7a7a;
+    margin: 5px 0;
+}
+
+.team .container .box  .btns
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .container .box  .btns a 
+{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    line-height: 45px;
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    transition: 0.1s;
+    color: #333;
+    text-decoration: none;
+}
+
+.team .container .box  .btns a:hover
+{
+    transform: scale(1.1);
+    background: #000;
+    color: #fff;
+}
+
+
+.team .container .box:hover 
+{
+    transform: scale(1.01);
+    transition: all ease 0.1s;
+}
+
+/* Portfolio */
+
+.portfolio .Coming-soon 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+
+.portfolio .Coming-soon p 
+{
+    color: #000;
+    font-size: 4.2em;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 1201px)
+{
+    /* Header */
+    header.sticky
+    {
+        padding: 20px 30px;
+    } 
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        /* height: calc(100% - 70%); */
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background: rgba(255, 255, 255, 0.8); Semi-transparent background for better blur effect */
+        backdrop-filter: blur(10px); /* Apply the blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari support */
+        transition: backdrop-filter 0.3s ease; /* Smooth transition for the blur effect */
+    }
+
+    header .navigation li 
+    {
+        margin-left: 0;
+    }
+
+    header .navigation li a
+    {
+        display: block; 
+         padding-top: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 3.0em;
+        font-weight: 300;
+    }
+
+    header .logo {
+        font-size: 2.5em;
+    }
+
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active 
+    {
+        background: url('close.png');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+
+    /* Section */
+    section 
+    {
+        padding: 100px;
+    }
+
+    .banner .content h2 
+    {
+        font-size: 6.0em;
+        color: #fff;
+    }
+
+    .banner .content p 
+    {
+        font-size: 2.2em;
+        color: #999;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+    /* About */
+    .row 
+    {
+        flex-direction: column;
+    }
+
+    .row .col50
+    {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 p {
+        font-size: 1.6em;
+        color: #000;
+    }
+    .row .col50 .imgBx
+    {
+        display: none;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    }
+
+    /* Title */
+    .title
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 3.2em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    p
+    {
+        font-size: 1.5em;
+        color: #999;
+    }
+    
+    .services .wrapper .content-box .card p {
+        font-size: 1.5em;
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    .bx-laptop:before {
+        content: "\eb2b";
+        font-size: 2.2em;
+    }   
+
+    .bx-mobile:before {
+        content: "\eb8f";
+        font-size: 2.2em;
+    }
+
+     
+    .bx-code:before {
+        content: "\ea68";
+        font-size: 2.2em;
+    }
+
+
+    .services .wrapper .content-box .card {
+        min-height: 320px;
+        width: 552px;
+    }
+    .services .wrapper .content-box .card h2 {
+        font-size: 2.2em;
+    }
+
+    #services .wrapper .content-box .card i {
+        font-size: 2.2em;
+      }
+    /* Team */
+
+    .team {
+        width: 100%;
+        min-height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background: #f8f8f8; */
+    }
+    .team .container
+    {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start; /* Align items to the top */
+    }
+
+    .team .container .box {
+        /* margin-top: 10px; */
+        width: 366px;
+        height: 350;
+    }
+    
+
+    .services .wrapper .content-box {
+        display: contents;
+        margin-top: 30px !important;
+    }
+    
+
+    .portfolio .Coming-soon p 
+     {
+       font-size: 2.2em;
+     }
+}
+
+
+@media (max-width: 850px)
+{
+    .team .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: start;
+    }
+
+    .portfolio .Coming-soon p 
+     {
+       font-size: 1.0em;
+     }
+}
+
+@media (max-width: 600px)
+{
+    header .logo {
+        font-size: 1.8em;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+    }
+
+    .banner .content p {
+        font-size: 1.3em;
+    }
+
+    header .navigation li a {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 1.1em;
+    }
+
+    .titleText {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.0em;   
+    }
+
+    .services .wrapper .content-box .card {
+        min-height: 320px;
+        width: 452px;
+    }   
+
+    .services .wrapper .content-box .card h2 {
+        font-size: 1.5em;
+    }
+    .services .wrapper .content-box .card p {
+        font-size: 1.3em;
+    }
+
+    .bx-laptop:before {
+        content: "\eb2b";
+        font-size: 1.8em;
+    }   
+
+    .bx-mobile:before {
+        content: "\eb8f";
+        font-size: 1.8em;
+    }
+
+     
+    .bx-code:before {
+        content: "\ea68";
+        font-size: 1.8em;
+    }
+
+}
+
+@media (max-width: 490px)
+{
+    .portfolio .Coming-soon p 
+    {
+      font-size: 0.7em;
+      /* color: red; */
+    }
+}
+@media (max-width: 415px)
+{
+    header .logo {
+        font-size: 1.3em;
+    }
+
+    .menuToggle {
+        width: 30px;
+        height: 20px;
+    }
+
+    header .navigation li a {
+        font-size: 1.6em;
+    }
+
+    .banner .content h2 {
+        font-size: 1.92em;
+    }
+
+    .banner .content p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    .row .col50 p {
+        font-size: 1em;
+    }
+
+    .services .wrapper .content-box .card {
+        min-height: 320px;
+        width: 332px;
+    }
+
+    .services .wrapper .content-box .card p {
+       text-align: center;
+    }
+
+    .team .container .box {
+        /* margin-top: 10px; */
+        width: 266px;
+    }
+
+
+    .portfolio .Coming-soon p 
+     {
+       font-size: 0.7em;
+     }
+}

@@ -1,10 +1,13 @@
-import React from "react";
-import "./Contact.css";
+// import React from 'react';
+// import "./Contact.css";
+// import ContactForm from './ContactForm';
 
-const Contact = () => (
-    <section id="contact">
+// function Contact() {
+//   return (
+//     <section className="contact" id="contact">
+//        <ContactForm />
+//     </section>
+//   );
+// }
 
-    </section>
-);
-
-export default Contact;
+// export default Contact;
