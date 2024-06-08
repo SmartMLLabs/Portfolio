@@ -7,33 +7,33 @@ function Team() {
       img: "rohit.png",
       name: "Rohit Kumar",
       role: "Data Scientist",
-      instagram: "https://instagram.com/rohit",
-      linkedin: "https://linkedin.com/in/rohit",
-      email: "mailto:rohit@example.com"
+      instagram: "https://www.instagram.com/rohitkumar.0783/",
+      linkedin: "https://www.linkedin.com/in/rohit7830/",
+      email: "mailto:bpscrohit@gmail.com"
     },
     {
       img: "revanth.png",
       name: "Sai Revanth",
       role: "Machine Learning Engineer",
-      instagram: "https://instagram.com/revanth",
-      linkedin: "https://linkedin.com/in/revanth",
-      email: "mailto:revanth@example.com"
+      instagram: "https://www.instagram.com/sairevanth0007/",
+      linkedin: "https://www.linkedin.com/in/sairevanth0007/",
+      email: "mailto:sairevanth0007@gmail.com"
     },
     {
       img: "rohan.png",
       name: "Rohan Jh",
       role: "UI/UX Designer",
-      instagram: "https://instagram.com/rohan",
-      linkedin: "https://linkedin.com/in/rohan",
-      email: "mailto:rohan@example.com"
+      instagram: "https://www.instagram.com/rohan_jh/",
+      linkedin: "https://www.linkedin.com/in/rohan-gnanesh-9a633a226/",
+      email: "mailto:rohanjh44@gmail.com"
     },
     {
       img: "nikhil.png",
       name: "Nikhil Chowdary",
       role: "Software Developer",
-      instagram: "https://instagram.com/nikhil",
-      linkedin: "https://linkedin.com/in/nikhil",
-      email: "mailto:nikhil@example.com"
+      instagram: "https://www.instagram.com/nikh.cg/",
+      linkedin: "https://www.linkedin.com/in/nikhil-chowdary-garikapati-2a5433212/",
+      email: "mailto:nikhil15600@gmail.com"
     },
     {
       img: "ravi.jpeg",
